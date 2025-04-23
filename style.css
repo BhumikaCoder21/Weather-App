@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background 0.3s ease;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #005dc1;
+}
+
+.weather-card {
+    margin-top: 20px;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+}
+
+.weather-card img {
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading {
+    font-size: 1.2rem;
+    color: #0077ff;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.weather-sunny {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.weather-rainy {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.weather-cloudy {
+    background: linear-gradient(to right, #a8c0ff, #3f4c6b);
+}
+
+.weather-snowy {
+    background: linear-gradient(to right, #b4e1f2, #006f9b);
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0077ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.forecast-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.forecast-day {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-day img {
+    width: 50px;
+    height: 50px;
+}
