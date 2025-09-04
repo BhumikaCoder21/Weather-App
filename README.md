@@ -14,6 +14,11 @@ This is a simple weather application that allows users to search for weather inf
 - **HTML**: Structure of the app.
 - **CSS**: Styling for the app layout and design.
 - **JavaScript**: Fetching weather data using the WeatherAPI, handling user interaction, and dynamically updating the UI.
+## 📷 Preview
+
+![Weather App Screenshot](/WeatherApp.png) <!-- Replace with actual screenshot if available -->
+
+---
 
 ## Setup Instructions
 
